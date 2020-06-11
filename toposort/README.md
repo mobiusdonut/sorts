@@ -9,7 +9,7 @@ or toposort) or topological ordering of a directed graph is a linear
 ordering of its vertices such that for every directed edge uv from
 vertex u to vertex v, u comes before v in the ordering.
 
-#### Input data description
+### Input data description
 The input to the toposort function is an object describing the
 dependencies among the input nodes. Each key is a dependent node, the
 corresponding value is a set containing the dependent nodes.
@@ -44,5 +44,5 @@ are returned first because they do not have prerequisites. They are
 then removed from consideration, and then MATH-101A doesn't depend on anything remaining. This process continues until all nodes are
 returned, or a circular dependency is detected.
 
-#### Circular dependencies
+### Circular dependencies
 A circular dependency will return the string value "Circular dependency error". Implementation that returns problematic nodes is WIP.
